@@ -1,262 +1,88 @@
-/* ================================
-     BLACK & GOLD HERO (ACCUEIL)
-================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-.black-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
-    padding: 0 7%;
+body {
+    color: #fff;
+    background: #0d0d0d;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-    background: #000; /* Même en mode clair */
+    text-align: center;
 }
 
-.black-hero .hero-inner {
-    padding: 160px 0 120px;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
-.black-hero .hero-tag {
-    color: var(--accent); /* gold */
-    letter-spacing: 0.25em;
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.7;
 }
 
-.black-hero .hero-title {
-    color: #fff;
-    font-size: clamp(2.8rem, 4.2vw, 3.6rem);
-    margin-bottom: 20px;
-    line-height: 1.25;
-}
-
-.black-hero .hero-text {
-    color: #d2d2d2;
-    margin-bottom: 30px;
-    max-width: 520px;
-}
-
-.hero-image-container {
-    width: 100%;
-    height: 460px;
-    border-radius: 24px;
-    overflow: hidden;
-    border: 1px solid rgba(212,175,55,0.25);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
-}
-
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(80%);
-    transition: 0.5s;
-}
-
-.hero-image-container:hover .hero-image {
-    transform: scale(1.05);
-    filter: brightness(65%);
-}
-
-
-/* ================================
-      DARK MODE OVERRIDES
-================================ */
-
-body.dark .black-hero {
-    background: #000;
-}
-
-body.dark .hero-title {
-    color: #fff;
-}
-
-body.dark .hero-text {
-    color: #d8d8d8;
-}
-
-body.dark .hero-image-container {
-    border-color: rgba(212,175,55,0.35);
-}
-
-/* ================================
-           SECTION TITLES
-================================ */
-
-.section-title {
-    position: relative;
+.btn {
     display: inline-block;
-    padding-bottom: 8px;
-}
-
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 2px;
-    background: var(--accent); /* gold */
-}
-
-/* ================================
-        SERVICES CARDS DARK
-================================ */
-
-body.dark .feature-card {
-    background: #111;
-    border: 1px solid rgba(212,175,55,0.2);
-    color: var(--text-main);
-}
-
-body.dark .feature-card h3 {
-    color: #fff;
-}
-
-/* ================================
-         PROJECTS GRID DARK
-================================ */
-
-body.dark .project-card {
-    border: 1px solid rgba(212,175,55,0.2);
-}
-
-body.dark .project-overlay {
-    background: rgba(0,0,0,0.6);
-    color: var(--accent);
-}
-
-/* ================================
-         RESPONSIVE HERO
-================================ */
-
-@media (max-width: 900px) {
-    .black-hero {
-        grid-template-columns: 1fr;
-        padding: 120px 7% 60px;
-    }
-
-    .hero-image-container {
-        height: 320px;
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 600px) {
-    .black-hero .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .black-hero {
-        padding: 100px 6% 60px;
-    }
-}
-
-/* ===============================
-   HEADER GLASS
-================================*/
-.glass-header {
-    backdrop-filter: blur(14px);
-    background: rgba(10, 15, 35, 0.55);
-    border-bottom: 1px solid rgba(212,175,55,0.35);
-}
-
-/* Nouveau style du logo */
-.logo {
-    font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: #d4af37; /* Gold */
-}
-
-/* Navigation */
-.nav-links a {
-    position: relative;
-    margin-left: 26px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 1px solid white;
     text-decoration: none;
-    font-size: 0.95rem;
-    padding-bottom: 5px;
-    color: #d6d6e2; /* bleu clair */
+    color: white;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffffff;
+.btn:hover {
+    background: white;
+    color: black;
 }
 
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #d4af37;
-    transition: width 0.25s;
+/* SECTIONS */
+section {
+    padding: 80px 10%;
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* PORTFOLIO GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
     width: 100%;
-}
-/* ===============================
-   MODE BLEU & DORÉ
-================================*/
-body.dark {
-    --bg-main: #06101f;
-    --bg-soft: #0b152b;
-    --accent: #d4af37;     /* Gold */
-    --accent-strong: #f1d680;
-    --text-main: #ffffff;
-    --text-soft: #b7c1d7;
-    background: #06101f;
+    display: block;
 }
 
-body.dark .section {
-    background: #06101f;
+.card h3 {
+    padding: 15px;
 }
 
-body.dark .section.highlight {
-    background: linear-gradient(160deg, #0b152b, #06101f);
-}
-/* ===============================
-   BACKGROUND LIGHT ORBS
-================================*/
-.background-blur {
-    position: fixed;
-    inset: 0;
-    background: radial-gradient(circle at 20% 30%, rgba(40,120,255,0.22), transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(15,60,150,0.2), transparent 50%);
-    animation: move-bg 18s infinite alternate ease-in-out;
-    z-index: -1;
+.card:hover {
+    transform: translateY(-8px);
 }
 
-@keyframes move-bg {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    100% {
-        transform: translate(-50px, -40px);
-    }
+/* CONTACT */
+.contact {
+    text-align: center;
 }
-/* Effet flottant léger */
-.floating {
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) }
-    50% { transform: translateY(-12px) }
-}
-
-/* Parallax au scroll */
-img.parallax {
-    transform: translateY(0);
-    transition: transform 0.2s;
-}
-
-window.addEventListener('scroll', () => {
-    document.querySelectorAll('.parallax').forEach(img => {
-        img.style.transform = `translateY(${window.scrollY * -0.06}px)`;
-    });
-});
-
