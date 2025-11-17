@@ -1,53 +1,73 @@
-<!DOCTYPE html><html lang="fr"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projets – Portfolio Luxe</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="page-transition" id="pageTransition"></div>
-<header class="main-header"><div class="logo">MON PORTFOLIO</div><nav>
-    <a href="index.html" data-transition>Accueil</a>
-    <a href="essentiel.html" data-transition>Essentiel</a>
-    <a href="detail.html" data-transition>Détail</a>
-    <a href="projets.html" data-transition>Projets</a>
-    <a href="contact.html" data-transition>Contact</a>
-</nav></header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Luxe</title>
+    <link rel="stylesheet" href="style.css">
 
-<main class="page">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<section class="section page-hero">
-<div class="section-inner narrow">
-<p class="page-label reveal">Galerie</p>
-<h1 class="page-title reveal">Mes projets</h1>
-<p class="section-text reveal">Tu pourras remplacer les images par les tiennes.</p>
-</div>
-</section>
+    <!-- NAV -->
+    <header>
+        <div class="logo">MON PORTFOLIO</div>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section class="section">
-<div class="section-inner">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="content">
+            <h1 class="fade-in">Créer. Inspirer. Élever.</h1>
+            <p class="fade-in delay">Un univers lumineux, minimaliste et haut de gamme.</p>
+            <a href="#portfolio" class="btn fade-in delay2">Découvrir</a>
+        </div>
+    </section>
 
-<div class="project-grid">
-  <div class="project-card reveal">
-    <img src="https://via.placeholder.com/800x600?text=Projet+1">
-    <div class="project-overlay"><h3>Projet 1</h3></div>
-  </div>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>À propos</h2>
+        <p>
+            Une courte description pourra être ajoutée ici.  
+            Style élégant, épuré, professionnel — parfait pour mettre en valeur ton identité.
+        </p>
+    </section>
 
-  <div class="project-card reveal">
-    <img src="https://via.placeholder.com/800x600?text=Projet+2">
-    <div class="project-overlay"><h3>Projet 2</h3></div>
-  </div>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
 
-  <div class="project-card reveal">
-    <img src="https://via.placeholder.com/800x600?text=Projet+3">
-    <div class="project-overlay"><h3>Projet 3</h3></div>
-  </div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/1200x800?text=Projet+1" alt="">
+                <div class="overlay"><h3>Projet Premium 1</h3></div>
+            </div>
 
-  <div class="project-card reveal">
-    <img src="https://via.placeholder.com/800x600?text=Projet+4">
-    <div class="project-overlay"><h3>Projet 4</h3></div>
-  </div>
-</div>
+            <div class="card">
+                <img src="https://via.placeholder.com/1200x800?text=Projet+2" alt="">
+                <div class="overlay"><h3>Projet Premium 2</h3></div>
+            </div>
 
-</div>
-</section>
+            <div class="card">
+                <img src="https://via.placeholder.com/1200x800?text=Projet+3" alt="">
+                <div class="overlay"><h3>Projet Premium 3</h3></div>
+            </div>
+        </div>
+    </section>
 
-</main>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Ajoute ton e-mail ici plus tard.</p>
+        <a href="mailto:email@example.com" class="btn">Me contacter</a>
+    </section>
 
-<script src="script.js"></script></body></html>
+    <script src="script.js"></script>
+</body>
+</html>
