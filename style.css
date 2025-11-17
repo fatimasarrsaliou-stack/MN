@@ -149,3 +149,72 @@ body.dark .project-overlay {
         padding: 100px 6% 60px;
     }
 }
+
+/* ===============================
+   HEADER GLASS
+================================*/
+.glass-header {
+    backdrop-filter: blur(14px);
+    background: rgba(10, 15, 35, 0.55);
+    border-bottom: 1px solid rgba(212,175,55,0.35);
+}
+
+/* Nouveau style du logo */
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #d4af37; /* Gold */
+}
+
+/* Navigation */
+.nav-links a {
+    position: relative;
+    margin-left: 26px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+    color: #d6d6e2; /* bleu clair */
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #d4af37;
+    transition: width 0.25s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+/* ===============================
+   MODE BLEU & DORÉ
+================================*/
+body.dark {
+    --bg-main: #06101f;
+    --bg-soft: #0b152b;
+    --accent: #d4af37;     /* Gold */
+    --accent-strong: #f1d680;
+    --text-main: #ffffff;
+    --text-soft: #b7c1d7;
+    background: #06101f;
+}
+
+body.dark .section {
+    background: #06101f;
+}
+
+body.dark .section.highlight {
+    background: linear-gradient(160deg, #0b152b, #06101f);
+}
