@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil – Portfolio Luxe</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Ton Nom</h1>
-        <p>Ton métier – Développeur · Designer · Créateur</p>
-        <a href="#portfolio" class="btn">Voir mes projets</a>
-    </section>
+<div class="page-transition" id="pageTransition"></div>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <h2>À propos</h2>
-        <p>
-            Une courte description sur toi, ton expérience, et ce que tu fais.
+<header class="main-header transparent">
+    <div class="logo">MON PORTFOLIO</div>
+
+    <nav>
+        <a href="index.html" data-transition>Accueil</a>
+        <a href="essentiel.html" data-transition>Essentiel</a>
+        <a href="detail.html" data-transition>Détail</a>
+        <a href="projets.html" data-transition>Projets</a>
+        <a href="contact.html" data-transition>Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-inner">
+        <p class="hero-tag reveal">Portfolio moderne & luxueux</p>
+
+        <h1 class="hero-title reveal">
+            Un espace élégant pour<br>mettre en avant ton travail.
+        </h1>
+
+        <p class="hero-text reveal">
+            Personnalise le contenu à ta guise.
         </p>
-    </section>
 
-    <!-- PORTFOLIO -->
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
+        <a href="projets.html" class="btn primary reveal" data-transition>
+            Voir mes projets
+        </a>
+    </div>
+</section>
 
-        <div class="grid">
-            <div class="card">
-                <img src="https://via.placeholder.com/800x500" alt="">
-                <h3>Projet 1</h3>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/800x500" alt="">
-                <h3>Projet 2</h3>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/800x500" alt="">
-                <h3>Projet 3</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Tu veux travailler avec moi ?</p>
-        <a class="btn" href="mailto:email@example.com">Me contacter</a>
-    </section>
-
+<script src="script.js"></script>
 </body>
 </html>
