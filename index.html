@@ -1,185 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil – Portfolio Black & Gold</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<div class="background-blur"></div>
 
-<div class="page-transition" id="pageTransition"></div>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Ton Nom</h1>
+        <p>Ton métier – Développeur · Designer · Créateur</p>
+        <a href="#portfolio" class="btn">Voir mes projets</a>
+    </section>
 
-<header class="main-header glass-header">
-    <div class="logo">MON PORTFOLIO</div>
-
-    <nav class="nav-links">
-        <a href="index.html" data-transition class="active">Accueil</a>
-        <a href="essentiel.html" data-transition>Essentiel</a>
-        <a href="detail.html" data-transition>Détail</a>
-        <a href="projets.html" data-transition>Projets</a>
-        <a href="contact.html" data-transition>Contact</a>
-    </nav>
-
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-</header>
-
-
-
-<!-- ============================ -->
-<!--           HERO              -->
-<!-- ============================ -->
-
-<section class="hero black-hero">
-    <div class="hero-inner reveal">
-        <p class="hero-tag">Créateur Digital & Designer Web</p>
-
-        <h1 class="hero-title">Élever votre identité visuelle<br>
-            avec un design moderne & premium.</h1>
-
-        <p class="hero-text">
-            Je combine design, stratégie et développement web pour concevoir
-            des expériences élégantes, immersives et centrées utilisateur.
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>À propos</h2>
+        <p>
+            Une courte description sur toi, ton expérience, et ce que tu fais.
         </p>
+    </section>
 
-        <a href="projets.html" class="btn primary" data-transition>
-            Explorer mes créations
-        </a>
-    </div>
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
 
-    <div class="hero-image-container reveal">
-        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1000" class="hero-image">
-    </div>
-</section>
-
-
-<!-- ============================ -->
-<!--        PRESENTATION         -->
-<!-- ============================ -->
-
-<section class="section">
-    <div class="section-inner narrow">
-        <h2 class="section-title reveal">Une vision moderne du digital</h2>
-
-        <p class="section-text reveal">
-            Passionné par l’esthétique, la fluidité et la performance, je crée
-            des expériences web épurées et élégantes. Chaque projet est pensé
-            pour refléter l’identité de marque de façon raffinée, tout en
-            offrant une navigation intuitive et une cohérence visuelle forte.
-        </p>
-    </div>
-</section>
-
-
-<!-- ============================ -->
-<!--            SERVICES         -->
-<!-- ============================ -->
-
-<section class="section highlight">
-    <div class="section-inner">
-        <h2 class="section-title reveal">Services Premium</h2>
-
-        <div class="feature-grid">
-
-            <div class="feature-card reveal">
-                <span class="feature-label">UX / UI Design</span>
-                <h3>Interfaces élégantes</h3>
-                <p>Création d’interfaces modernes, intuitives et ultra
-                    esthétiques adaptées à tous types de projets digitaux.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/800x500" alt="">
+                <h3>Projet 1</h3>
             </div>
 
-            <div class="feature-card reveal">
-                <span class="feature-label">Web Design</span>
-                <h3>Sites vitrines & pro</h3>
-                <p>Des designs soignés qui allient performance, style et
-                    impact visuel pour renforcer votre présence en ligne.</p>
+            <div class="card">
+                <img src="https://via.placeholder.com/800x500" alt="">
+                <h3>Projet 2</h3>
             </div>
 
-            <div class="feature-card reveal">
-                <span class="feature-label">Branding</span>
-                <h3>Identité visuelle</h3>
-                <p>Création d’une identité forte : logo, palette, direction
-                    artistique et univers graphique complet.</p>
+            <div class="card">
+                <img src="https://via.placeholder.com/800x500" alt="">
+                <h3>Projet 3</h3>
             </div>
-
-            <div class="feature-card reveal">
-                <span class="feature-label">Développement</span>
-                <h3>Intégration & code</h3>
-                <p>Développement web propre, fluide et optimisé avec animations
-                    premium et transitions modernes.</p>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Tu veux travailler avec moi ?</p>
+        <a class="btn" href="mailto:email@example.com">Me contacter</a>
+    </section>
 
-<!-- ============================ -->
-<!--            PROJETS          -->
-<!-- ============================ -->
-
-<section class="section">
-    <div class="section-inner">
-        <h2 class="section-title reveal">Derniers Projets</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card reveal">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000">
-                <div class="project-overlay">
-                    <h3>Site d’agence moderne</h3>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1000">
-                <div class="project-overlay">
-                    <h3>Application Dashboard UX</h3>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138ed3a8?q=80&w=1000">
-                <div class="project-overlay">
-                    <h3>Portfolio Minimaliste</h3>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1000">
-                <div class="project-overlay">
-                    <h3>Landing Page Premium</h3>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- ============================ -->
-<!--            CTA              -->
-<!-- ============================ -->
-
-<section class="section highlight">
-    <div class="section-inner narrow reveal" style="text-align:center;">
-        <h2 class="section-title">Envie de collaborer ?</h2>
-
-        <p class="section-text">
-            Discutons ensemble de votre projet. Je peux vous aider à construire
-            une présence élégante, performante et cohérente.
-        </p>
-
-        <a href="contact.html" class="btn primary" data-transition>
-            Me contacter
-        </a>
-    </div>
-</section>
-
-
-<script src="script.js"></script>
 </body>
 </html>
